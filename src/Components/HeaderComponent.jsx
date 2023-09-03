@@ -1,37 +1,45 @@
 import React from 'react';
 import './HeaderComponents.css';
+import { Link } from 'react-router-dom';
+
 
 function HeaderComponent() {
   return (
-    <div className='Navimg d-flex justify-content-evenly text-white'>
+    <div className='Navimg d-flex justify-content-evenly text-white Home'>
+
       <div>
-        <nav className='d-flex sticky-top' style={{ fontSize: '1.2vw', margin: '2vw 0vw 0vw 60vw', padding: '2vw', color: 'white' }}>
+        <nav className='d-flex' style={{ fontSize: '1.2vw', margin: '2vw 0vw 0vw 60vw', padding: '2vw', color: 'white' }}>
           <div className='d-flex'>
             <dt className='navmar'></dt>
           </div>
         </nav>
-        <div className='intro'>
-          <div className=' text-center w-25' style={{ fontSize: '6vw', margin: '5vw 0vw 0vw' }}>
+        <div className='intro d-flex justify-content-between'>
+
+          <div className=' NameTitle' >
             <dt>Krishna </dt>
             <dt>Prasad</dt>
+           
           </div>
-          <br />
-          <dt style={{fontSize:"2.2vw", color: '#69d294' }}>Full-Stack Developer</dt>
+        <div className='NavIconsAd' >
+          <dt className='navicons' style={{ margin: '.8vw' }}>
+            <Link to="/GitHub"> <span className='bi bi-github'></span></Link>
+          </dt>
+
+          <dt className='navicons' style={{ margin: '.8vw' }}>
+            <Link to="/LinkedIn"> <span className='bi bi-linkedin'></span></Link>
+          </dt>
+
+          <dt className='navicons' style={{ margin: '.8vw' }}>
+            <Link to="/Whatsapp"> <span className='bi bi-whatsapp'></span></Link>
+          </dt>
+
+          <dt className='navicons' style={{ margin: '.8vw' }}>
+            <Link to="/Instagram"> <span className='bi bi-instagram'></span></Link>
+          </dt>
+
         </div>
-        <div className='' style={{ float: 'right', margin: '0vw 2vw', fontSize:"2vw" }}>
-          <dt className='navicons' style={{ margin: '.8vw' }}>
-            <span className='bi bi-facebook'></span>
-          </dt>
-          <dt className='navicons' style={{ margin: '.8vw' }}>
-            <span className='bi bi-whatsapp'></span>
-          </dt>
-          <dt className='navicons' style={{ margin: '.8vw' }}>
-            <span className='bi bi-instagram'></span>
-          </dt>
-          <dt className='navicons' style={{ margin: '.8vw' }}>
-            <span className='bi bi-twitter'></span>
-          </dt>
         </div>
+        <dt className='FullStackHeader'>Full-Stack Developer</dt>
       </div>
     </div>
   );

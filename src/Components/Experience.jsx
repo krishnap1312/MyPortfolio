@@ -2,8 +2,8 @@ import React from "react";
 import "./HeaderComponents.css"
 
 const EducationTimeline = () => (
-  <div className="education-timeline">
-    <h2 className="Headers">Education Timeline</h2>
+  <div className="education-timeline Exp">
+    <h2 className="Headers">Education</h2>
     <div className="timeline">
       
       <div className="timeline-item">
